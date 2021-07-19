@@ -4,47 +4,80 @@
     <meta charset="utf-8">
     <title>Calculator</title>
     <link href="css/css.css" rel="stylesheet" type="text/css">
-    <script src="js/js.js"></script>
 </head>
 
 <body>
-<div>
-    <table>
-        <tr>
-           <th colspan="4" id="screen"></td> 
-        </tr>
+<div class="calc">
+    <input type="number" class="calc-screen" maxlength="10" value="" disabled>
+    <table class="keyboard">
         <tr></tr><tr></tr>
         <tr>
-            <td onClick="clearAll()">C</td>
-            <td onClick="clearEntry">CE</td>
-            <td onClick="sendNum('/')">/</td>
-            <td onClick="sendNum('*')">*</td>
+            <td>
+                <button type="button" value="clearAll">C</button>
+            </td>
+            <td>
+                <button type="button" value="clearEntry">CE</button>
+            </td>
+            <td>
+                <button type="button" value="/">/</button>
+            </td>
+            <td>
+                <button type="button" value="*">*</button>
+            </td>
         </tr>
         <tr>
-            <td onClick="sendNum('7')">7</td>
-            <td onClick="sendNum('8')">8</td>
-            <td onClick="sendNum('9')">9</td>
-            <td onClick="sendNum('-')">-</td>
+            <td>
+                <button type="button" value="7">7</button>
+            </td>
+            <td>
+                <button type="button" value="8">8</button>
+            </td>
+            <td>
+                <button type="button" value="9">9</button>
+            </td>
+            <td>
+                <button type="button" value="-">-</button>
+            </td>
         </tr>
         <tr>
-            <td onClick="sendNum('4')">4</td>
-            <td onClick="sendNum('5')">5</td>
-            <td onClick="sendNum('6')">6</td>
-            <td onClick="sendNum('+')">+</td>
+            <td>
+                <button type="button" value="4">4</button>
+            </td>
+            <td>
+                <button type="button" value="5">5</button>
+            </td>
+            <td>
+                <button type="button" value="6">6</button>
+            </td>
+            <td>
+                <button type="button" value="+">+</button>
+            </td>
         </tr>
         <tr>
-            <td onClick="sendNum('1')">1</td>
-            <td onClick="sendNum('2')">2</td>
-            <td onClick="sendNum('3')">3</td>
-            <td rowspan="2" onClick="equalTo()">=</td>
+            <td>
+                <button type="button" value="1">1</button>
+            </td>
+            <td>
+                <button type="button" value="2">2</button>
+            </td>
+            <td>
+                <button type="button" value="3">3</button>
+            </td>
+            <td rowspan="2">
+                <button type="button" value="=">=</button>
+            </td>
         </tr>
         <tr>
-            <td colspan="2" onClick="sendNum('0')">0</td>
-            <td onClick="sendNum('.')">.</td>
+            <td colspan="2">
+                <button type="button" value="0">0</button>
+            </td>
+            <td>
+                <button type="button" value=".">.</button>
+            </td>
         </tr>
     </table>
 </div>
 
 </body>
-
+<script src="js/js.js"></script>
 </html>

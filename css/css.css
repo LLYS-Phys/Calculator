@@ -1,7 +1,7 @@
 div{
-    position:absolute;
+    position:fixed;
     padding:2%;
-    margin-top:5%;
+    margin-top:-1%;
     background-color: rgb(192, 190, 190);
     font-size:4vw;
     width:30%;
@@ -27,11 +27,20 @@ table{
     table-layout:fixed;
     width:100%;
 }
-th{
+.calc-screen{
     height:6vw;
     background-color: white;
     border-radius: 1.2vw;
     text-align:right;
     padding:1vw;
+    width:92%;
+    font-size:4vw;
 }
-
+button{
+    background-color: transparent;
+    font-size:2vw;
+    font-weight: bold;
+    height:7vw;
+    width:7vw;
+    border:none;
+}
